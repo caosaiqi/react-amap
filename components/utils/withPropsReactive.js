@@ -91,7 +91,6 @@ function withPropsReactive(MapComponent) {
 
     componentWillUnmount() {
       const { instance } = this.myMapComponent
-      if (!instance) return
       if ('destroy' in instance) {
         setTimeout(() => {
           instance.destroy()
